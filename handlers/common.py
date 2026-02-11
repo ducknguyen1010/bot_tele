@@ -6,7 +6,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if update.message:
         await update.message.reply_text(
             "Dùng lệnh: /weather <địa điểm>. Ví dụ: /weather Ha Noi (địa điểm viết cách, không dấu)\n"
-            "Dùng lệnh: /price <ma> để xem giá coin. Ví dụ: /price BTC"
+            "Dùng lệnh: /price <ma> để xem giá coin. Ví dụ: /price BTC\n"
+            "Dùng lệnh: /chat <noi dung> để hoi Ollama"
         )
 
 
@@ -14,7 +15,8 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     if update.message:
         await update.message.reply_text(
             "Cú pháp: /weather <địa điểm>. Ví dụ: /weather Da Nang (địa điểm viết cách, không dấu)\n"
-            "Cú pháp: /price <ma>. Ví dụ: /price ETH"
+            "Cú pháp: /price <ma>. Ví dụ: /price ETH\n"
+            "Cú pháp: /chat <noi dung>"
         )
 
 
